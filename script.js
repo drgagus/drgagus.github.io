@@ -9,6 +9,25 @@ function tampilhasil(param1, param2){
     document.getElementById("hasil").innerHTML = param1 + "( Score " + param2 + " )"
 }
 
+function rekomendasi(parameter){
+    document.getElementById("rekomendasi").classList.remove("hidden")
+    document.getElementById("rendah").classList.add("hidden")
+    document.getElementById("sedang").classList.add("hidden")
+    document.getElementById("tinggi").classList.add("hidden")
+    document.getElementById("ekstrem").classList.add("hidden")
+    if(parameter == "LOW"){
+        document.getElementById("rendah").classList.toggle("hidden")
+    }else if(parameter == "MODERATE"){
+        document.getElementById("sedang").classList.toggle("hidden")
+    }else if(parameter == "HIGH"){
+        document.getElementById("tinggi").classList.toggle("hidden")
+    }else if(parameter == "EXTREME"){
+        document.getElementById("ekstrem").classList.toggle("hidden")
+    }else{
+
+    }
+}
+
 function kategori(parameter){
     if(parameter >= -8 && parameter <= -2){
         kat = "LOW"
@@ -26,6 +45,7 @@ function kategori(parameter){
         kat = "-"
     }
     tampilhasil(kat,parameter)
+    rekomendasi(kat)
     return kat
 }
 
@@ -93,6 +113,9 @@ document.getElementById('refresh').addEventListener("click", function (e) {
     kolom3 = 0
     kat = ""
     document.getElementById("hasil").innerHTML = "-"
-
+    document.getElementById("rendah").classList.add("hidden")
+    document.getElementById("sedang").classList.add("hidden")
+    document.getElementById("tinggi").classList.add("hidden")
+    document.getElementById("ekstrem").classList.add("hidden")
     // window.location.reload()
 })
