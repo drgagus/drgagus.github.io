@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="endocase.png" />
+    <link rel="apple-touch-icon" href="endocase.png" />
+    <title>endo case</title>
+</head>
+<body>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-2 mx-auto">
+          <div class="flex flex-wrap w-full mb-2">
+            <div class="lg:w-1/2 w-full mb-0 lg:mb-0">
+              <a href="index.html" class=""><h1 class="sm:text-xl text-lg font-medium title-font mb-2 text-gray-900">EndoHome</h1></a>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container px-5 py-0 mx-auto">
+          <div class="flex flex-col text-center w-full mb-2">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">ENDO CASE</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed font-bold text-red-700">UNDER DEVELOPMENT</p>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">AAE EndoCase is an app developed by the American Association of Endodontists (AAE) to help assess the difficulty of endodontic cases.</p>
+          </div>
+          <div class="lg:w-3/4 w-full mx-auto overflow-auto">
+            <table class="table-auto w-full text-left whitespace-no-wrap border-3">
+                <thead class="border-b-3">
+                    <tr>
+                    <th class="px-4 py-3 title-font tracking-wider font-bold text-gray-900 text-sm bg-gray-300 rounded-tl rounded-bl">Criteria and Subcriteria</th>
+                    <th class="px-4 py-3 title-font tracking-wider font-bold text-green-600 text-sm bg-gray-300 text-center">Low<br>Difficulty</th>
+                    <th class="px-4 py-3 title-font tracking-wider font-bold text-amber-600 text-sm bg-gray-300 text-center">Moderate<br>Difficulty</th>
+                    <th class="px-4 py-3 title-font tracking-wider font-bold text-red-600 text-sm bg-gray-300 text-center">High<br>Difficulty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="">
+                    <td class="px-4 py-3 border-b-2 bg-gray-100" colspan="4">PATIENT CONSIDERATIONS</td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Medical History</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="medicalhistory" type="radio" id="medicalhistory1" ><label for="medicalhistory1" class=""> No medical problem (ASA Class 1 or 2*)</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="medicalhistory" type="radio" id="medicalhistory2" ><label for="medicalhistory2" class=""> One or more medical problem (ASA Clss 3*)</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="medicalhistory" type="radio" id="medicalhistory3"><label for="medicalhistory3" class=""> Complex medical history/serious illness/disability (ASA Class 4*)</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Anesthesia</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="anesthesia" type="radio" id="anesthesia1" ><label for="anesthesia1" class=""> No history of anesthesia problems</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="anesthesia" type="radio" id="anesthesia2" ><label for="anesthesia2" class=""> Vasoconstrictor intolerance</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="anesthesia" type="radio" id="anesthesia3"><label for="anesthesia3" class=""> Difficulty achieving and/or maintaining anesthesia</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Patient Disposition</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="disposition" type="radio" id="disposition1" ><label for="disposition1" class=""> Cooperative and compliant</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="disposition" type="radio" id="disposition2" ><label for="disposition2" class=""> Anxious but cooperative</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="disposition" type="radio" id="disposition3"><label for="disposition3" class=""> Uncooperative</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Ability to Open Mouth</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="openmouth" type="radio" id="openmouth1" ><label for="openmouth1" class=""> No limitation</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="openmouth" type="radio" id="openmouth2" ><label for="openmouth2" class=""> Slight limitation in opening</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="openmouth" type="radio" id="openmouth3"><label for="openmouth3" class=""> Significant limitation in opening</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Gag Reflex</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="gagreflex" type="radio" id="gagreflex1" ><label for="gagreflex1" class=""> None</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="gagreflex" type="radio" id="gagreflex2" ><label for="gagreflex2" class=""> Gags occasionally with radiographs/treatment</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="gagreflex" type="radio" id="gagreflex3"><label for="gagreflex3" class=""> Extreme gag reflex which has compromised past dental care</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Emergency Condition</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="emergencycondition" type="radio" id="emergencycondition1" ><label for="emergencycondition1" class=""> Minimum pain or swelling</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="emergencycondition" type="radio" id="emergencycondition2" ><label for="emergencycondition2" class=""> Moderate pain or sweling</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="emergencycondition" type="radio" id="emergencycondition3"><label for="emergencycondition3" class=""> Severe pain or sweling</label></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr class="">
+                    <td class="border-t-2 border-gray-900 border-b-2 px-4 py-3 bg-gray-100" colspan="4">DIAGNOSTIC AND TREATMENT CONSIDERATIONS</td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Diagnosis</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="diagnosislow" type="checkbox" id="diagnosislow" ><label for="diagnosislow" class=""> Sign and symptoms consistent with recognized pulpal and periapical condition</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="diagnosismoderate" type="checkbox" id="diagnosismoderate" ><label for="diagnosismoderate" class=""> Extensive differential diagnosis of usual signs and sumptoms required</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="diagnosishigh1" type="checkbox" id="diagnosishigh1" ><label for="diagnosishigh1" class=""> Confusing and complex signs and symptoms: difficult diagnosis</label><br><input name="diagnosishigh2" type="checkbox" id="diagnosishigh2" ><label for="diagnosishigh2" class=""> History of chronis oral/facial pain</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Radiographic Difficulties</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="radiographicdifficulties" type="radio" id="radiographicdifficulties1" ><label for="radiographicdifficulties1" class=""> Minimal difficulty obtaining/interpreting radiographs</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="radiographicdifficulties" type="radio" id="radiographicdifficulties2" ><label for="radiographicdifficulties2" class=""> Moderate difficulty obtaining'interpreting radiographs (e.g., high floor of mouth, narrow or low palatal vault, presence of tori)</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="radiographicdifficulties" type="radio" id="radiographicdifficulties3"><label for="radiographicdifficulties3" class=""> Extreme difficulty obtaining/interpreting radiographs (e.g., superiomposed anatomical structures)</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Position in Arch - Tooth Type</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="toothtype" type="radio" id="toothtype1" ><label for="toothtype1" class=""> Anterior/premolar</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="toothtype" type="radio" id="toothtype2" ><label for="toothtype2" class=""> 1st molar</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="toothtype" type="radio" id="toothtype3"><label for="toothtype3" class=""> 2nd or 3rd molar</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Position in Arch - Inclination</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="inclination" type="radio" id="inclination1" ><label for="inclination1" class=""> Slight inclination (<10 degree)</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="inclination" type="radio" id="inclination2" ><label for="inclination2" class=""> Moderate inclination (10-30 degree)</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="inclination" type="radio" id="inclination3"><label for="inclination3" class=""> Extreme inclination (>30 degree)</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Position in Arch - Rotation</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="rotation" type="radio" id="rotation1" ><label for="rotation1" class=""> Slight rotation (<10 degree)</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="rotation" type="radio" id="rotation2" ><label for="rotation2" class=""> Moderate rotation (10-30 degree)</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="rotation" type="radio" id="rotation3"><label for="rotation3" class=""> Extreme rotation (>30 degree)</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Tooth Isolation</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="isolation" type="radio" id="isolation1" ><label for="isolation1" class=""> Routine rubber dam placement</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="isolation" type="radio" id="isolation2" ><label for="isolation2" class=""> Simple pretreatment modification required for rubber dam isolation</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="isolation" type="radio" id="isolation3"><label for="isolation3" class=""> Extensive pretreatment modification</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Crown Morphology</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="crownmorphologylow" type="checkbox" id="crownmorphologylow" ><label for="crownmorphologylow" class=""> Normal original crown morphology</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="crownmorphologymoderate1" type="checkbox" id="crownmorphologymoderate1" ><label for="crownmorphologymoderate1" class=""> Full coverage restoration</label><br><input name="crownmorphologymoderate2" type="checkbox" id="crownmorphologymoderate2" ><label for="crownmorphologymoderate2" class=""> Porcelain restoration</label><br><input name="crownmorphologymoderate3" type="checkbox" id="crownmorphologymoderate3" ><label for="crownmorphologymoderate3" class=""> Bridge abutment</label><br><input name="crownmorphologymoderate4" type="checkbox" id="crownmorphologymoderate4" ><label for="crownmorphologymoderate4" class=""> Moderate deviation from normal tooth/root form (e.g., taurodontism, microdents)</label><br><input name="crownmorphologymoderate5" type="checkbox" id="crownmorphologymoderate5" ><label for="crownmorphologymoderate5" class=""> Tooth with extensive coronal destruction</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="crownmorphologyhigh1" type="checkbox" id="crownmorphologyhigh1" ><label for="crownmorphologyhigh1" class=""> Restoration does not reflect original anatomy/alignment</label><br><input name="crownmorphologyhigh2" type="checkbox" id="crownmorphologyhigh2" ><label for="crownmorphologyhigh2" class=""> Significant deviation from normal tooth/root form (e.g., fusion, dens in dente)</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Canal Morphology</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="canalmorphologylow" type="checkbox" id="canalmorphologylow" ><label for="canalmorphologylow" class=""> Slight or no curvature (<10 degree)</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="canalmorphologymoderate1" type="checkbox" id="canalmorphologymoderate1" ><label for="canalmorphologymoderate1" class=""> Moderate curvature (10-30 degree)</label><br><input name="canalmorphologymoderate2" type="checkbox" id="canalmorphologymoderate2" ><label for="canalmorphologymoderate2" class=""> Crown axis differs moderately from root axis</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="canalmorphologyhigh1" type="checkbox" id="canalmorphologyhigh1" ><label for="canalmorphologyhigh1" class=""> C-shaped morphology</label><br><input name="canalmorphologyhigh2" type="checkbox" id="canalmorphologyhigh2" ><label for="canalmorphologyhigh2" class=""> Extreme curvature (>30 degree)</label><br><input name="canalmorphologyhigh3" type="checkbox" id="canalmorphologyhigh3" ><label for="canalmorphologyhigh3" class=""> S-shaped curve</label><br><input name="canalmorphologyhigh4" type="checkbox" id="canalmorphologyhigh4" ><label for="canalmorphologyhigh4" class=""> Mandibular premolar or anterior with 2 roots</label><br><input name="canalmorphologyhigh5" type="checkbox" id="canalmorphologyhigh5" ><label for="canalmorphologyhigh5" class=""> Maxillary premolar with 3 roots</label><br><input name="canalmorphologyhigh6" type="checkbox" id="canalmorphologyhigh6" ><label for="canalmorphologyhigh6" class=""> Canal devides in middle or apical third</label><br><input name="canalmorphologyhigh7" type="checkbox" id="canalmorphologyhigh7" ><label for="canalmorphologyhigh7" class=""> Very long tooth (>25mm)</label><br><input name="canalmorphologyhigh8" type="checkbox" id="canalmorphologyhigh8" ><label for="canalmorphologyhigh8" class=""> Other anomalies such as radix ento/paramolaris</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Apex Diameter</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="apexdiameter" type="radio" id="apexdiameter1" ><label for="apexdiameter1" class=""> Closed apex (<1mm in diameter)</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="apexdiameter" type="radio" id="apexdiameter2" ><label for="apexdiameter2" class=""> Apical opening 1-1.5mm in diameter</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="apexdiameter" type="radio" id="apexdiameter3"><label for="apexdiameter3" class=""> Open apex (>1.5mm in diameter)</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Radiographic Appearance</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="radiographicappearancelow" type="checkbox" id="radiographicappearancelow" ><label for="radiographicappearancelow" class=""> Canal(s) and chamber visible and not reduced in size</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="radiographicappearancemoderate1" type="checkbox" id="radiographicappearancemoderate1" ><label for="radiographicappearancemoderate1" class=""> Canal(s) and chamber visible but reduced in size</label><br><input name="radiographicappearancemoderate2" type="checkbox" id="radiographicappearancemoderate2" ><label for="radiographicappearancemoderate2" class=""> Pulp stones</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="radiographicappearancehigh1" type="checkbox" id="radiographicappearancehigh1" ><label for="radiographicappearancehigh1" class=""> Indistinct canal path</label><br><input name="radiographicappearancehigh2" type="checkbox" id="radiographicappearancehigh2" ><label for="radiographicappearancehigh2" class=""> Canal(s) and chamber not visible</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Proximity of the root apices to vital structures such as the IAN or mental foramen</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="rootapices" type="radio" id="rootapices1" ><label for="rootapices1" class=""> Vital structures 5 or more milimeters from apices</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="rootapices" type="radio" id="rootapices2" ><label for="rootapices2" class=""> 3-5 milimeters</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="rootapices" type="radio" id="rootapices3"><label for="rootapices3" class=""> <3 milimeters</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Resorption</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="resorptionlow" type="checkbox" id="resorptionlow" ><label for="resorptionlow" class=""> No resorption evident</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="resorptionmoderate" type="checkbox" id="resorptionmoderate" ><label for="resorptionmoderate" class=""> Minimal apical resorption</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="resorptionhigh1" type="checkbox" id="resorptionhigh1" ><label for="resorptionhigh1" class=""> Extensive apical resorption</label><br><input name="resorptionhigh2" type="checkbox" id="resorptionhigh2" ><label for="resorptionhigh2" class=""> Internal resorption</label><br><input name="resorptionhigh3" type="checkbox" id="resorptionhigh3" ><label for="resorptionhigh3" class=""> External resorption</label></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr class="">
+                    <td class="border-t-2 border-gray-900 border-b-2 px-4 py-3 bg-gray-100" colspan="4">ADDITIONAL CONSIDERATIONS</td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Trauma History</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="traumahistorylow1" type="checkbox" id="traumahistorylow1" ><label for="traumahistorylow1" class=""> Uncomplicated crown fracture of mature or immature teeth</label><br><input name="traumahistorylow2" type="checkbox" id="traumahistorylow2" ><label for="traumahistorylow2" class=""> No history trauma</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="traumahistorymoderate1" type="checkbox" id="traumahistorymoderate1" ><label for="traumahistorymoderate1" class=""> Complicated crown fracture of mature teeth</label><br><input name="traumahistorymoderate2" type="checkbox" id="traumahistorymoderate2" ><label for="traumahistorymoderate2" class=""> Subluxation</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="traumahistoryhigh1" type="checkbox" id="traumahistoryhigh1" ><label for="traumahistoryhigh1" class=""> Complicated crown fracture of immature teeth</label><br><input name="traumahistoryhigh2" type="checkbox" id="traumahistoryhigh2" ><label for="traumahistoryhigh2" class=""> Horizontal root fracture</label><br><input name="traumahistoryhigh3" type="checkbox" id="traumahistoryhigh3" ><label for="traumahistoryhigh3" class=""> Alveolar fracture</label><br><input name="traumahistoryhigh4" type="checkbox" id="traumahistoryhigh4" ><label for="traumahistoryhigh4" class=""> Intrusive, extrusive or lateral luxation</label><br><input name="traumahistoryhigh5" type="checkbox" id="traumahistoryhigh5" ><label for="traumahistoryhigh5" class=""> Avultion</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Endodontic History</td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="endodontichistorylow" type="checkbox" id="endodontichistorylow" ><label for="endodontichistorylow" class=""> No previous treatment</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="endodontichistorymoderate" type="checkbox" id="endodontichistorymoderate" ><label for="endodontichistorymoderate" class=""> Previous access without complications</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="endodontichistoryhigh1" type="checkbox" id="endodontichistoryhigh1" ><label for="endodontichistoryhigh1" class=""> Previous access with complications (e.g., perforation, non-negotiated canal, ledge, separated instrument)</label><br><input name="endodontichistoryhigh2" type="checkbox" id="endodontichistoryhigh2" ><label for="endodontichistoryhigh2" class=""> Previous surgical or non-surgical endodontic treatment completed</label></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3">Periodontal-Endodontic Condition
+                    </td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="perioendolow" type="checkbox" id="perioendolow" ><label for="perioendolow" class=""> None or mild periodontal desease or concurrent moderate periodontal disease</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="perioendomoderate" type="checkbox" id="perioendomoderate" ><label for="perioendomoderate" class=""> Combined endodontic/periodontic lesion</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><input name="perioendohigh1" type="checkbox" id="perioendohigh1" ><label for="perioendohigh1" class=""> Concurrent severe periodontal disease</label><br><input name="perioendohigh2" type="checkbox" id="perioendohigh2" ><label for="perioendohigh2" class=""> Cracked teeth with periodontal complications</label><br><input name="perioendohigh3" type="checkbox" id="perioendohigh3" ><label for="perioendohigh3" class=""> Root amputation prior to endodontic treatment</label></td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="container lg:px-48 px-8 py-2 mx-auto">
+          <div class="flex flex-wrap text-center justify-center">
+            <div class="p-4 sm:w-1/4 w-1/3">
+              <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">20</h2>
+              <p class="leading-relaxed text-green-500 font-bold">LOW</p>
+            </div>
+            <div class="p-4 sm:w-1/4 w-1/3">
+              <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">18</h2>
+              <p class="leading-relaxed text-amber-500 font-bold">MODERATE</p>
+            </div>
+            <div class="p-4 sm:w-1/4 w-1/3">
+              <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">22</h2>
+              <p class="leading-relaxed text-red-500 font-bold">HIGH</p>
+            </div>
+            <div class="p-4 sm:w-1/4">
+              <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">60</h2>
+              <p class="leading-relaxed text-gray-900 font-bold">TOTAL</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container lg:px-48 px-8 py-2 pb-24 mx-auto">
+          <div class="flex flex-wrap">
+            <div class="p-4 w-full">
+              <h2 class="font-medium text-gray-900 mb-4 text-left">This case is above 23 points. The case should not be treated by a predoctoral stucent. The patient should be referred to an endodontic resident or endodontist.</h2>
+              <nav class="flex flex-col items-start text-left -mb-1 space-y-2.5">
+                <a>
+                  <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam non autem ratione, sunt adipisci sit, quo amet laborum aliquam optio consectetur aperiam assumenda.
+                </a>
+                <a>
+                  <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quos sit ea repudiandae hic reprehenderit deleniti. Pariatur vel accusantium architecto. Nisi consequuntur porro fuga adipisci ab culpa ipsum?
+                </a>
+                <a>
+                  <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates optio reiciendis amet repudiandae commodi.
+                </a>
+                <a>
+                  <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                      <path d="M20 6L9 17l-5-5"></path>
+                    </svg>
+                  </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus officia nisi similique nihil reiciendis fugiat possimus. Similique, maxime neque? Nesciunt, accusantium.
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+    </section>
+</body>
+</html>

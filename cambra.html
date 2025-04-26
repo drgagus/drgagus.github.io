@@ -1,0 +1,388 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="agus">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" http-equiv="refresh" content="1">
+  <link href="styles.css" rel="stylesheet">
+  <link rel="icon" href="cambra.png" />
+  <link rel="apple-touch-icon" href="cambra.png" />
+  <title>cambra</title>
+</head>
+<body>
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-2 mx-auto">
+      <div class="flex flex-wrap w-full mb-2">
+        <div class="lg:w-1/2 w-full mb-0 lg:mb-0">
+          <a href="index.html" class=""><h1 class="sm:text-xl text-lg font-medium title-font mb-2 text-gray-900">EndoHome</h1></a>
+          <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container px-5 py-0 pb-12 mx-auto">
+      <div class="flex flex-col text-center w-full mb-4">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900">CAMBRA<br>Caries Management by Risk Assessment</h1>
+        <!-- <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Developed by UCSF (University of California, San Francisco)</p> -->
+      </div>
+      <div class="text-left w-full">
+        <p class="lg:w-3/4 mx-auto leading-relaxed text-xs"></p>
+      </div>
+      <div class="lg:w-3/4 w-full mx-auto overflow-auto">
+        <table class="table-auto w-full text-left whitespace-no-wrap border-3">
+            <thead class="border-b-3">
+                <tr>
+                <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300 rounded-tl rounded-bl">Caries Risk Assessment Component</th>
+                <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300 text-center">Coloumn<br>1</th>
+                <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300 text-center">Coloumn<br>2</th>
+                <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-300 text-center">Coloumn<br>3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                <td class="px-4 py-3 border-b-2 bg-gray-100">Protektive Factors <span class="text-red-400">(question items)</span></td>
+                <td class="border-t-2 border-gray-300 px-4 py-3 bg-gray-300"></td>
+                </tr>
+                <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom11" class="">Flouridated water</label></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom11" type="checkbox" id="kolom11" onclick="myFunction1('kolom11')"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                </tr>
+                <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom12" class="">F toothpaste at least once a day</label></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom12" type="checkbox" id="kolom12" onclick="myFunction1('kolom12')"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                </tr>
+                <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom13" class="">F toothpaste 2x daily or more</label></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom13" type="checkbox" id="kolom13" onclick="myFunction1('kolom13')"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                </tr>
+                <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom14" class="">5.000 ppm F toothpaste</label></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom14" type="checkbox" id="kolom14" onclick="myFunction1('kolom14')"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                </tr>
+                <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom15" class="">F varnish last 6 months</label></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom15" type="checkbox" id="kolom15" onclick="myFunction1('kolom15')"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                </tr>
+                <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom16" class="">0,05% sodium flouride mouthrinse daily</label></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom16" type="checkbox" id="kolom16" onclick="myFunction1('kolom16')"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                </tr>
+                <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom17" class="">0,12% chlorhexidine glucconate mouthrinse daily 7 days monthly</label></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom17" type="checkbox" id="kolom17" onclick="myFunction1('kolom17')"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                </tr>
+                <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom18" class="">Normal salivary function</label></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom18" type="checkbox" id="kolom18" onclick="myFunction1('kolom18')"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                </tr>
+            </tbody>
+            <tbody">
+                <tr class="border-t-2">
+                <td class="px-4 py-3 border-b-2 bg-gray-100">Biological or environtmental risk factors <span class="text-red-400">(question items)</span></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                </tr>
+                <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom211" class="">Frequent snacking (> 3times daily)</label></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom211" type="checkbox" id="kolom211" onclick="myFunction2('kolom211')"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                </tr>
+                <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom212" class="">Hyposalivatory medications</label></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom212" type="checkbox" id="kolom212" onclick="myFunction2('kolom212')"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                </tr>
+                <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom213" class="">Recreational drug use</label></td>
+                <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom213" type="checkbox" id="kolom213" onclick="myFunction2('kolom213')"></td>
+                <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"></td>
+                </tr>
+                <tr>
+                <td class="border-t-2 border-b-2 px-4 py-3 bg-gray-100">Biological Risk Factors <span class="text-red-400">(clinical exam)</span></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                </tr>
+                <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom221" class="">Heavy plaque on the teeth</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom221" type="checkbox" id="kolom221" onclick="myFunction2('kolom221')"></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom222" class="">Reduced salivary function (measured low flow rate)</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom222" type="checkbox" id="kolom222" onclick="myFunction2('kolom222')"></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom223" class="">Deep pits and fissures</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom223" type="checkbox" id="kolom223" onclick="myFunction2('kolom223')"></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom224" class="">Exposed tooth roots</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom224" type="checkbox" id="kolom224" onclick="myFunction2('kolom224')"></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                    </tr>
+                    <tr>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom225" class="">Orthodontic appliances</label></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom225" type="checkbox" id="kolom225" onclick="myFunction2('kolom225')"></td>
+                    <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                    </tr>
+            </tbody>
+            <tbody>
+                <tr class="border-t-2">
+                <td class="px-4 py-3 border-b-2 bg-gray-100">Disease  Indicators <span class="text-red-400">(clinical exam)</span></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300"></td>
+                </tr>
+                <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom31" class="">New cavities or lession(s) into dentin (radiographically)</label></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom11" type="checkbox" id="kolom31" onclick="myFunction3('kolom31')"></td>
+                </tr>
+                <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom32" class="">New white spot lessions on smooth surfaces</label></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom12" type="checkbox" id="kolom32" onclick="myFunction3('kolom32')"></td>
+                </tr>
+                <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom33" class="">New non-cavited lesion(s) in enamel (radiographically)</label></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom13" type="checkbox" id="kolom33" onclick="myFunction3('kolom33')"></td>
+                </tr>
+                <tr>
+                <td class="border-t-2 border-gray-200 px-4 py-3"><label for="kolom34" class="">Existing restorations in last 3 years (new patient) or the last year (patient of record)</label></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3"></td>
+                <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="kolom14" type="checkbox" id="kolom34" onclick="myFunction3('kolom34')"></td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+      
+      <div class="flex pl-4 mt-4 lg:w-2/3 w-full mx-auto">
+        <div class="flex flex-col text-center w-full mb-4">
+          <h1 class="sm:text-xl text-medium font-medium title-font text-gray-900">Result Assessment</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-900 font-bold" id="hasil">-</p>
+        </div>
+      </div> 
+      <div class="mt-2 lg:w-3/4 w-full mx-auto">
+        <div class="hidden flex-wrap -m-4" id="rekomendasi">
+          <div class="p-4 w-full" id="rendah">
+            <div class="h-full p-6 rounded-lg border-2 border-green-500 flex flex-col relative overflow-hidden">
+              <h1 class="text-xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                Resiko Karies Rendah
+              </h1>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Penguatan DHE dan tetap jaga kebersihan rongga mulut.
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Sikat gigi minimal 2x sehari.
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Gunakan pasta gigi yang mengandung flour (1000-1450 ppm F).
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Kunjungan berkala ke dokter gigi dalam 12 bulan sekali.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 w-full" id="sedang">
+            <div class="h-full p-6 rounded-lg border-2 border-yellow-500 flex flex-col relative overflow-hidden">
+              <h1 class="text-xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                Resiko Karies sedang
+              </h1>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Peningkatan DHE.
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Sikat gigi minimal 2x sehari dengan menggunakan pasta gigi yang mengandung flour.
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Gunakan obat kumur 0,05 NaF sehari sekali pada malam hari.
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Kurangi mengemil di antara jam makan (diganti dengan lozenges atau permen yang mengandung xylitol).
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Kunjungan berkala ke dokter gigi dalam 6 bulan sekali.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 w-full" id="tinggi">
+            <div class="h-full p-6 rounded-lg border-2 border-red-500 flex flex-col relative overflow-hidden">
+              <h1 class="text-xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                Resiko Karies Tinggi
+              </h1>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Peningkatan DHE.
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Sikat gigi minimal 2x sehari dengan menggunakan pasta gigi yang mengandung flour (5000 ppm F).
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Berkumur selama 1 menit sekali sehari selama seminggu setiap bulan dengan obat kumur klorheksidin glukonat (0,12%). Berkumur dilakukan 1 jam setelah menyikat gigi pada malam hari sebelum tidur.
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Kurangi mengemil di antara jam makan (diganti dengan lozenges atau permen yang mengandung xylitol).
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Lakukan flouride varnish pada waktu kunjungan klinik.
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Kunjungan berkala ke dokter gigi dalam 4 bulan sekali.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 w-full" id="ekstrem">
+            <div class="h-full p-6 rounded-lg border-2 border-gray-900 flex flex-col relative overflow-hidden">
+              <h1 class="text-xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
+                Resiko Karies Extreme
+              </h1>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Peningkatan DHE.
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Sikat gigi minimal 2x sehari dengan menggunakan pasta gigi yang mengandung flour (5000 ppm F).
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Kumur ad libitium setiap hari dengan larutan baking soda (2 sendok teh baking soda dalam 250ml air).
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Kurangi mengemil di antara jam makan (diganti dengan lozenges atau permen yang mengandung xylitol).
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Lakukan flouride varnish pada waktu kunjungan klinik.
+              </p>
+              <p class="flex items-center text-gray-600 mb-2">
+                <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-gray-400 text-white rounded-full flex-shrink-0">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
+                    <path d="M20 6L9 17l-5-5"></path>
+                  </svg>
+                </span>Kunjungan berkala ke dokter gigi dalam 3 bulan sekali.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button class="flex mx-auto mt-2 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" id="refresh">reset</button>
+      </div>
+
+    </div>
+
+    
+
+  </section>
+  <script src="cambra.js"></script>
+</body>
+</html>
