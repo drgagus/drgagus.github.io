@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="postendo.png" />
+    <link rel="apple-touch-icon" href="postendo.png" />
+    <title>endo restoration</title>
+</head>
+<body>
+    <section class="text-gray-600 body-font">
+      <div class="px-5 py-5 mx-auto  bg-slate-600">
+        <div class="flex flex-wrap w-full mb-0">
+          <div class="lg:w-1/2 w-full mb-0 lg:mb-0">
+            <a href="index.html" class=""><h1 class="sm:text-xl text-lg font-medium title-font text-gray-100">EndoHome</h1></a>
+          </div>
+        </div>
+      </div>
+    
+        <div class="container px-5 py-0 mx-auto">
+          <div class="flex flex-col text-center w-full mb-4">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">POST ENDODONTIC RESTORATION
+            </h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Evidence-based treatment planning for the restoration of endodontically treated single teeth: importance of coronal seal, post vs no post, and indirect vs direct restoration <span class="font-light text-sm text-gray-400">Alan Atlas, Simone Grandini, Marco Martignoni</span></p>
+          </div>
+          
+          <div class="flex items-center justify-center">
+              <div class="w-24 h-24 border-2 border-gray-900 rounded-lg text-center flex items-center justify-center hover:cursor-pointer" id="distalbukal" onClick="caries(0,0,'distalbukal')">
+                disto-bukal
+              </div>
+              <div class="w-24 h-24 border-2 border-gray-900 rounded-lg text-center flex items-center justify-center hover:cursor-pointer" id="bukal" onClick="caries(0,1,'bukal')">
+                bukal
+              </div>
+              <div class="w-24 h-24 border-2 border-gray-900 rounded-lg text-center flex items-center justify-center hover:cursor-pointer" id="mesiobukal" onClick="caries(0,2,'mesiobukal')">
+                mesio-bukal
+              </div>
+          </div>
+          <div class="flex items-center justify-center">
+              <div class="w-24 h-24 border-2 border-gray-900 rounded-lg text-center flex items-center justify-center hover:cursor-pointer" id="distal" onClick="caries(1,0,'distal')">
+                distal
+              </div>
+              <div class="w-24 h-24 border-2 border-gray-900 rounded-lg text-center flex items-center justify-center hover:cursor-pointer" id="oklusal" onClick="caries(1,1,'oklusal')">
+                oklusal
+              </div>
+              <div class="w-24 h-24 border-2 border-gray-900 rounded-lg text-center flex items-center justify-center hover:cursor-pointer" id="mesial" onClick="caries(1,2,'mesial')">
+                mesial
+              </div>
+          </div>
+          <div class="flex items-center justify-center">
+              <div class="w-24 h-24 border-2 border-gray-900 rounded-lg text-center flex items-center justify-center hover:cursor-pointer" id="distolingualpalatal" onClick="caries(2,0,'distolingualpalatal')">
+                disto-lingual/palatal
+              </div>
+              <div class="w-24 h-24 border-2 border-gray-900 rounded-lg text-center flex items-center justify-center hover:cursor-pointer" id="lingualpalatal" onClick="caries(2,1,'lingualpalatal')">
+                lingual/palatal
+              </div>
+              <div class="w-24 h-24 border-2 border-gray-900 rounded-lg text-center flex items-center justify-center hover:cursor-pointer" id="mesiolingualpalatal" onClick="caries(2,2,'mesiolingualpalatal')">
+                mesio-lingual/palatal
+              </div>
+          </div>
+
+          <div class="flex flex-col text-center w-full mt-4">
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base" id="caries"></p>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base underline font-semibold" id="ridgelost"></p>
+          </div>
+
+          <div class="flex items-center justify-center">
+              <div class="w-36 h-24 text-center font-bold" id="post">
+                
+              </div>
+              <div class="w-36 h-24 text-center font-bold" id="restoration">
+                
+              </div>
+          </div>
+
+          
+
+        </div>
+    </section>
+
+<script src="postendo.js"></script>
+</body>
+</html>
