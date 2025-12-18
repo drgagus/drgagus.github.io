@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
-    <title>endo edu</title>
+    <link rel="icon" href="progendo.png" />
+    <link rel="apple-touch-icon" href="progendo.png" />
+    <title>prognosis</title>
 </head>
 <body>
     <section class="text-gray-600 body-font">
@@ -17,11 +19,249 @@
       </div>
         
         <div class="container px-5 py-0 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
+          <div class="flex flex-col text-center w-full mb-2">
             <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">ENDODONTIC PROGNOSIS AND OUTCOME</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed font-bold text-red-700">UNDER CONSTRUCTION</p>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Endodontic prognosis is influenced by various factors, including preoperative, intraoperative, and postoperative factors.</p>
+
           </div>
         </div>
+
+          <div class="flex flex-wrap lg:px-10 px-4 pb-4">
+            <div class="lg:w-1/3 w-full mx-auto overflow-auto">
+              <table class="table-auto w-full text-left whitespace-no-wrap border-1">
+                  <thead class="border-3">
+                      <tr>
+                      <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-400 rounded-tl rounded-bl text-center" colspan="2">PREOPERATIF</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center" rowspan="4">Pulp Diagnosis</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="diagnosa" type="radio" id="diagnosa1" onclick="prognosa(0,0,4)"><label for="diagnosa1" class=""> Pulpa vital (reversible / normal)</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="diagnosa" type="radio" id="diagnosa2" onclick="prognosa(0,0,3)"><label for="diagnosa2" class=""> Irreversible pulpitis</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="diagnosa" type="radio" id="diagnosa3" onclick="prognosa(0,0,2)"><label for="diagnosa3" class=""> Nekrosis pulpa</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="diagnosa" type="radio" id="diagnosa4" onclick="prognosa(0,0,1)"><label for="diagnosa4" class=""> Retreatment / flare-up berulang</label></td>
+                      </tr>
+                  </tbody>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center" rowspan="4">Periapical Diagnosis</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="periapicaldiagnosis" type="radio" id="periapicaldiagnosis1" onclick="prognosa(0,1,4)"><label for="periapicaldiagnosis1" class=""> Normal</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="periapicaldiagnosis" type="radio" id="periapicaldiagnosis2" onclick="prognosa(0,1,3)"><label for="periapicaldiagnosis2" class=""> PAI 2-3</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="periapicaldiagnosis" type="radio" id="periapicaldiagnosis3" onclick="prognosa(0,1,2)"><label for="periapicaldiagnosis3" class=""> PAI 4</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="periapicaldiagnosis" type="radio" id="periapicaldiagnosis4" onclick="prognosa(0,1,1)"><label for="periapicaldiagnosis4" class=""> PAI 5</label></td>
+                      </tr>
+                  </tbody>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center" rowspan="4">Size of Periapical Lesion</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="sizeoflession" type="radio" id="sizeoflession1" onclick="prognosa(0,2,4)"><label for="sizeoflession1" class=""> Tidak ada</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="sizeoflession" type="radio" id="sizeoflession2" onclick="prognosa(0,2,3)"><label for="sizeoflession2" class=""> <5mm </label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="sizeoflession" type="radio" id="sizeoflession3" onclick="prognosa(0,2,2)"><label for="sizeoflession3" class=""> 5-10mm</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="sizeoflession" type="radio" id="sizeoflession4" onclick="prognosa(0,2,1)"><label for="sizeoflession4" class=""> >10mm</label></td>
+                      </tr>
+                  </tbody>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center" rowspan="4">Apical Periodontitis</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="apicalperiodontitis" type="radio" id="apicalperiodontitis1" onclick="prognosa(0,3,4)"><label for="apicalperiodontitis1" class=""> Tidak ada</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="apicalperiodontitis" type="radio" id="apicalperiodontitis2" onclick="prognosa(0,3,3)"><label for="apicalperiodontitis2" class=""> Ringan </label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="apicalperiodontitis" type="radio" id="apicalperiodontitis3" onclick="prognosa(0,3,2)"><label for="apicalperiodontitis3" class=""> Sedang</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="apicalperiodontitis" type="radio" id="apicalperiodontitis4" onclick="prognosa(0,3,1)"><label for="apicalperiodontitis4" class=""> Berat</label></td>
+                      </tr>
+                  </tbody>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center" rowspan="4">Canal Negotiability</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="canalnegotiability" type="radio" id="canalnegotiability1" onclick="prognosa(0,4,4)"><label for="canalnegotiability1" class=""> Sangat mudah</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="canalnegotiability" type="radio" id="canalnegotiability2" onclick="prognosa(0,4,3)"><label for="canalnegotiability2" class=""> Ringan </label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="canalnegotiability" type="radio" id="canalnegotiability3" onclick="prognosa(0,4,2)"><label for="canalnegotiability3" class=""> Sedang</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="canalnegotiability" type="radio" id="canalnegotiability4" onclick="prognosa(0,4,1)"><label for="canalnegotiability4" class=""> Berat</label></td>
+                      </tr>
+                  </tbody>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center" rowspan="4">Systemic Factors</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="systemicfactors" type="radio" id="systemicfactors1" onclick="prognosa(0,5,4)"><label for="systemicfactors1" class=""> Sehat</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="systemicfactors" type="radio" id="systemicfactors2" onclick="prognosa(0,5,3)"><label for="systemicfactors2" class=""> Terkontrol </label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="systemicfactors" type="radio" id="systemicfactors3" onclick="prognosa(0,5,2)"><label for="systemicfactors3" class=""> Tidak terkontrol</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="systemicfactors" type="radio" id="systemicfactors4" onclick="prognosa(0,5,1)"><label for="systemicfactors4" class=""> Imunosupresi</label></td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+            <div class="lg:w-1/3 w-full mx-auto overflow-auto">
+              <table class="table-auto w-full text-left whitespace-no-wrap border-1">
+                  <thead class="border-3">
+                      <tr>
+                      <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-400 rounded-tl rounded-bl text-center" colspan="2">INTRAOPERATIF</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center" rowspan="4">Level of Instrumentation</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="levelofinstrumentation" type="radio" id="levelofinstrumentation1" onclick="prognosa(1,0,4)"><label for="levelofinstrumentation1" class=""> WL tercapai sempurna</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="levelofinstrumentation" type="radio" id="levelofinstrumentation2" onclick="prognosa(1,0,3)"><label for="levelofinstrumentation2" class=""> Sedikit under-instrumentasi</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="levelofinstrumentation" type="radio" id="levelofinstrumentation3" onclick="prognosa(1,0,2)"><label for="levelofinstrumentation3" class=""> Signifikan under-instrumentasi</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="levelofinstrumentation" type="radio" id="levelofinstrumentation4" onclick="prognosa(1,0,1)"><label for="levelofinstrumentation4" class=""> Over-instrumentation</label></td>
+                      </tr>
+                  </tbody>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center" rowspan="4">Level of Obturation</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="levelofobturation" type="radio" id="levelofobturation1" onclick="prognosa(1,1,4)"><label for="levelofobturation1" class=""> Mencapai WL</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="levelofobturation" type="radio" id="levelofobturation2" onclick="prognosa(1,1,3)"><label for="levelofobturation2" class=""> Underfill <2mm </label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="levelofobturation" type="radio" id="levelofobturation3" onclick="prognosa(1,1,2)"><label for="levelofobturation3" class=""> Overfill</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="levelofobturation" type="radio" id="levelofobturation4" onclick="prognosa(1,1,1)"><label for="levelofobturation4" class=""> Ovoid besar</label></td>
+                      </tr>
+                  </tbody>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center" rowspan="4">Quality of Obturation</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="qualityofobturation" type="radio" id="qualityofobturation1" onclick="prognosa(1,2,4)"><label for="qualityofobturation1" class=""> Padat</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="qualityofobturation" type="radio" id="qualityofobturation2" onclick="prognosa(1,2,3)"><label for="qualityofobturation2" class=""> Void kecil </label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="qualityofobturation" type="radio" id="qualityofobturation3" onclick="prognosa(1,2,2)"><label for="qualityofobturation3" class=""> Void besar</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="qualityofobturation" type="radio" id="qualityofobturation4" onclick="prognosa(1,2,1)"><label for="qualityofobturation4" class=""> Sangat buruk</label></td>
+                      </tr>
+                  </tbody>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center" rowspan="4">Procedural Accidents</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="proceduralaccidents" type="radio" id="proceduralaccidents1" onclick="prognosa(1,3,4)"><label for="proceduralaccidents1" class=""> Tidak ada</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="proceduralaccidents" type="radio" id="proceduralaccidents2" onclick="prognosa(1,3,3)"><label for="proceduralaccidents2" class=""> Ledge</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="proceduralaccidents" type="radio" id="proceduralaccidents3" onclick="prognosa(1,3,2)"><label for="proceduralaccidents3" class=""> Transportasi</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="proceduralaccidents" type="radio" id="proceduralaccidents4" onclick="prognosa(1,3,1)"><label for="proceduralaccidents4" class=""> Fraktur instrumen</label></td>
+                      </tr>
+                  </tbody>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center" rowspan="4">Perforation</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="perforation" type="radio" id="perforation1" onclick="prognosa(1,4,4)"><label for="perforation1" class=""> Tidak ada</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="perforation" type="radio" id="perforation2" onclick="prognosa(1,4,3)"><label for="perforation2" class=""> Apikal kecil</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="perforation" type="radio" id="perforation3" onclick="prognosa(1,4,2)"><label for="perforation3" class=""> Mid-root</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="perforation" type="radio" id="perforation4" onclick="prognosa(1,4,1)"><label for="perforation4" class=""> Furkasi</label></td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+            <div class="lg:w-1/3 w-full mx-auto overflow-auto">
+              <table class="table-auto w-full text-left whitespace-no-wrap border-1">
+                  <thead class="border-3">
+                      <tr>
+                      <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-400 rounded-tl rounded-bl text-center" colspan="2">POSTOPERATIF</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center" rowspan="4">Coronal Restoration (timing)</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="coronalrestorationtiming" type="radio" id="coronalrestorationtiming1" onclick="prognosa(2,0,4)"><label for="coronalrestorationtiming1" class=""> Restorasi permanen segera</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="coronalrestorationtiming" type="radio" id="coronalrestorationtiming2" onclick="prognosa(2,0,3)"><label for="coronalrestorationtiming2" class=""> Delay < 2 minggu</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="coronalrestorationtiming" type="radio" id="coronalrestorationtiming3" onclick="prognosa(2,0,2)"><label for="coronalrestorationtiming3" class=""> Delay > 2 minggu</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="coronalrestorationtiming" type="radio" id="coronalrestorationtiming4" onclick="prognosa(2,0,1)"><label for="coronalrestorationtiming4" class=""> Tidak adekuat / bocor</label></td>
+                      </tr>
+                  </tbody>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center" rowspan="4">Coronal Restoration (quality)</td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="coronalrestorationquality" type="radio" id="coronalrestorationquality1" onclick="prognosa(2,1,4)"><label for="coronalrestorationquality1" class=""> Hermetis</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="coronalrestorationquality" type="radio" id="coronalrestorationquality2" onclick="prognosa(2,1,3)"><label for="coronalrestorationquality2" class=""> Minor leakage</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="coronalrestorationquality" type="radio" id="coronalrestorationquality3" onclick="prognosa(2,1,2)"><label for="coronalrestorationquality3" class=""> Mayor Leakage</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><input name="coronalrestorationquality" type="radio" id="coronalrestorationquality4" onclick="prognosa(2,1,1)"><label for="coronalrestorationquality4" class=""> Gagal restorasi</label></td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="container lg:px-48 px-8 py-0 pb-24 mx-auto">
+              <div class="flex flex-wrap">
+                <div class="p-0 w-full">
+                  <div class="">
+                    <h2 class="font-bold text-gray-900 mb-0 text-center" id="prognosis"></h2>
+                  </div>
+                </div>
+                <button class="flex mx-auto mt-2 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" id="refresh">reset</button>
+              </div>
+          </div>
     </section>
+    <script src="progendo.js"></script>
 </body>
 </html>
