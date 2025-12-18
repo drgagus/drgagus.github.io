@@ -4,24 +4,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="endodiag.png" />
+    <link rel="apple-touch-icon" href="endodiag.png" />
     <title>endo diag</title>
 </head>
 <body>
     <section class="text-gray-600 body-font">
-        <div class="px-5 py-5 mx-auto  bg-slate-600">
-            <div class="flex flex-wrap w-full mb-0">
-              <div class="lg:w-1/2 w-full mb-0 lg:mb-0">
-                <a href="index.html" class=""><h1 class="sm:text-xl text-lg font-medium title-font text-gray-100">EndoHome</h1></a>
-              </div>
-            </div>
+      <div class="px-5 py-5 mx-auto  bg-slate-600">
+        <div class="flex flex-wrap w-full mb-0">
+          <div class="lg:w-1/2 w-full mb-0 lg:mb-0">
+            <a href="index.html" class=""><h1 class="sm:text-xl text-lg font-medium title-font text-gray-100">EndoHome</h1></a>
           </div>
+        </div>
+      </div>
     
         <div class="container px-5 py-0 mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">ENDO DIAG</h1>
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">DIAGNOSA ENDODONTIC</h1>
             <p class="lg:w-2/3 mx-auto leading-relaxed font-bold text-red-700">UNDER CONSTRUCTION</p>
           </div>
+
+          <div class="flex flex-wrap lg:px-10 pb-12">
+            <div class="lg:w-1/2 w-full mx-auto overflow-auto">
+              <table class="table-auto w-full text-left whitespace-no-wrap border-1">
+                  <thead class="border-3">
+                      <tr>
+                      <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-400 rounded-tl rounded-bl"></th>
+                      <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-400 text-center">ANAMNESA</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="anamnesa1" type="checkbox" id="anamnesa1" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="anamnesa1" class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="anamnesa2" type="checkbox" id="anamnesa2" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="anamnesa2" class="">Suscipit accusamus iste, dignissimos fugiat tempora possimus</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="anamnesa3" type="checkbox" id="anamnesa3" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="anamnesa3" class="">Ratione iste vitae, saepe eius reiciendis possimus</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="anamnesa4" type="checkbox" id="anamnesa4" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="anamnesa4" class="">commodi voluptatum a ipsum molestiae dolorum impedit officia nulla odit! Sit</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="anamnesa5" type="checkbox" id="anamnesa5" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="anamnesa5" class="">perspiciatis saepe est eaque animi consequatur nesciunt ea qui blanditiis et?</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="anamnesa6" type="checkbox" id="anamnesa6" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="anamnesa6" class="">cum consectetur sed laborum quia vitae corrupti laudantium corporis voluptatem</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="anamnesa7" type="checkbox" id="anamnesa7" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="anamnesa7" class="">Nisi, non ipsam eius impedit delectus labore</label></td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+            <div class="lg:w-1/2 w-full mx-auto overflow-auto">
+              <table class="table-auto w-full text-left whitespace-no-wrap border-1">
+                  <thead class="border-3">
+                      <tr>
+                      <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-400 rounded-tl rounded-bl"></th>
+                      <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-400 text-center">SUBJECTIVE EXAMINATION</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="subjective1" type="checkbox" id="subjective1" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="subjective1" class="">quis illum, alias voluptates voluptatibus placeat earum?</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="subjective2" type="checkbox" id="subjective2" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="subjective2" class="">Nobis officiis commodi cumque iusto in nulla, suscipit eveniet corrupti</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="subjective3" type="checkbox" id="subjective3" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="subjective3" class="">quis rerum distinctio, tempora inventore. Repudiandae esse ut voluptate</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="subjective4" type="checkbox" id="subjective4" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="subjective4" class="">quibusdam perferendis iste sed accusamus facere doloribus quasi!</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="subjective5" type="checkbox" id="subjective5" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="subjective5" class="">Placeat dolore accusamus vel explicabo exercitationem magnam eveniet?</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="subjective6" type="checkbox" id="subjective6" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="subjective6" class="">Itaque velit, aut cumque consectetur explicabo quidem cupiditate eos</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="subjective7" type="checkbox" id="subjective7" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="subjective7" class="">nobis ipsa minima facilis reiciendis dolores! </label></td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+            <div class="lg:w-1/2 w-full mx-auto overflow-auto">
+              <table class="table-auto w-full text-left whitespace-no-wrap border-1">
+                  <thead class="border-3">
+                      <tr>
+                      <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-400 rounded-tl rounded-bl"></th>
+                      <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-400 text-center">OBJECTIVE EXAMINATION</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="objective1" type="checkbox" id="objective1" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="objective1" class="">repellat doloribus officiis delectus eveniet veritatis tenetur</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="objective2" type="checkbox" id="objective2" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="objective2" class="">Perspiciatis deserunt, consequuntur nemo necessitatibus voluptatum</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="objective3" type="checkbox" id="objective3" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="objective3" class="">aperiam magnam, asperiores ipsam suscipit autem nisi eum</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="objective4" type="checkbox" id="objective4" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="objective4" class="">cum alias tempora atque aliquam explicabo deleniti eligendi</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="objective5" type="checkbox" id="objective5" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="objective5" class="">delectus esse id iure! Perspiciatis quaerat, vero excepturi</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="objective6" type="checkbox" id="objective6" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="objective6" class="">libero animi nihil earum fuga id aspernatur quasi,</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="objective7" type="checkbox" id="objective7" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="objective7" class="">aspernatur quasi, laborum error voluptas.</label></td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+            <div class="lg:w-1/2 w-full mx-auto overflow-auto">
+              <table class="table-auto w-full text-left whitespace-no-wrap border-1">
+                  <thead class="border-3">
+                      <tr>
+                      <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-400 rounded-tl rounded-bl"></th>
+                      <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-400 text-center">RADIOGRAPH EXAMINATION</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="radiograph1" type="checkbox" id="radiograph1" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="radiograph1" class="">accusantium quis, repudiandae libero nemo ipsa debitis</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="radiograph2" type="checkbox" id="radiograph2" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="radiograph2" class="">alias modi! Voluptates obcaecati vero nam, quisquam explicabo</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="radiograph3" type="checkbox" id="radiograph3" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="radiograph3" class="">quas incidunt tempora tenetur, ad perferendis omnis</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="radiograph4" type="checkbox" id="radiograph4" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="radiograph4" class="">expedita laboriosam, eaque corrupti. Iure beatae, ea error</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="radiograph5" type="checkbox" id="radiograph5" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="radiograph5" class="">necessitatibus ad minima. Eum porro perferendis praesentium laboriosam</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="radiograph6" type="checkbox" id="radiograph6" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="radiograph6" class="">accusamus ad. Consequatur exercitationem perspiciatis</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-4 py-3 bg-gray-300 text-center"><input name="radiograph7" type="checkbox" id="radiograph7" onClick="diagnosa()"></td>
+                        <td class="border-t-2 border-gray-200 px-4 py-3"><label for="radiograph7" class="">sunt molestias maiores! Tempora, ratione!</label></td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap lg:px-10 pb-12">
+            <div class="lg:w-1/2 w-full mx-auto overflow-auto">
+              <table class="table-auto w-full text-left whitespace-no-wrap border-1">
+                  <thead class="border-3">
+                      <tr>
+                      <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-100 text-sm bg-gray-900 rounded-tl rounded-bl items-center text-center" colspan="2">DIAGNOSA</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-2 py-2 bg-gray-300 text-center">PULP</td>
+                        <td class="border-t-2 border-gray-200 px-2 py-2 bg-gray-300 text-center"><label for="anamnesa1" class="">PERIAPICAL</label></td>
+                      </tr>
+                      <tr>
+                        <td class="border-t-2 border-gray-200 px-2 py-2 text-center" id="pulp"></td>
+                        <td class="border-t-2 border-gray-200 px-2 py-2 text-center" id="periapical"></td>
+                      </tr>
+                  </tbody>
+              </table>
+            </div>
+          </div>
+
         </div>
     </section>
+    <script src="endodiag.js"></script>
 </body>
 </html>
