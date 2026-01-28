@@ -7,6 +7,8 @@
     <link rel="icon" href="endoai.png" />
     <link rel="apple-touch-icon" href="endoai.png" />
     <title>endo ai</title>
+
+
 </head>
 <body>
     <section class="text-gray-600 body-font">
@@ -18,12 +20,37 @@
         </div>
       </div>
     
-        <div class="container px-5 py-0 mx-auto">
-          <div class="flex flex-col text-center w-full mb-20">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">ENDO AI</h1>
-            <p class="lg:w-2/3 mx-auto leading-relaxed font-bold text-red-700">UNDER CONSTRUCTION</p>
-          </div>
+      <div class="container px-5 py-0 mx-auto">
+        <div class="flex flex-col text-center w-full mb-2">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">ENDO AI</h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">an intelligent system that uses deep learning to assist clinicians in diagnosis, evaluating root canal treatments, and guiding optimal clinical decisions.</p>          
         </div>
+      </div>
+
+      <div class="container lg:px-48 py-2 mx-auto flex flex-wrap items-center px-5 mb-24">
+        <div class="bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+          <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Periapical Index (PAI)</h2>
+          <form id="imgForm">
+            <div class="relative mb-2">
+              <input id="imgInput" type="file" accept="image/*" name="full-name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out cursor-pointer">
+              <label for="full-name" class="leading-7 text-sm text-gray-600" id="error"></label>
+            </div>
+            <div class="relative mb-4">
+              <div class="row" id="previewWrap">
+                    <strong></strong><br /><img id="preview" alt="" />
+              </div>
+            </div>
+          </form>
+          <button id="btnLoad" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Analize</button>
+          <p class="text-xl text-black mt-3" id="pai"></p>
+          <p class="text-xs text-gray-500 mt-3 w-8 h-8 hidden" id="loading">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><circle fill="none" stroke-opacity="1" stroke="#FF156D" stroke-width=".5" cx="100" cy="100" r="0"><animate attributeName="r" calcMode="spline" dur="2" values="1;80" keyTimes="0;1" keySplines="0 .2 .5 1" repeatCount="indefinite"></animate><animate attributeName="stroke-width" calcMode="spline" dur="2" values="0;25" keyTimes="0;1" keySplines="0 .2 .5 1" repeatCount="indefinite"></animate><animate attributeName="stroke-opacity" calcMode="spline" dur="2" values="1;0" keyTimes="0;1" keySplines="0 .2 .5 1" repeatCount="indefinite"></animate></circle></svg>
+          </p>
+        </div>
+      </div>    
+
     </section>
+
+<script src="endoai.js"></script>
 </body>
 </html>
